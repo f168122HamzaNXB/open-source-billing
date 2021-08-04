@@ -1,0 +1,75 @@
+.appBar{
+   background-color: 'white';
+}
+
+#backgroundColor{
+   background-color: #f2f2f2;
+   box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.2), 0 0px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header{
+   font-family: 'Dosis', sans-serif;
+    margin: 0 0 0 18px;
+    color: #09b8e2;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.source{
+   color: #b4b4b4
+}
+
+.menuStyle{
+   margin-left: 40px;
+   color: #ccc;
+   width: 50px;
+}
+
+.iconStyle{
+   margin-right: 40px;
+   color: #09b8e2;
+}
+
+.profileInfo{ 
+   height: 115px;
+   padding: 40px 15px 20px;
+   background: #05a4d8;
+   padding-top: 200px;
+   color: #05a4d8;
+   position: fixed;
+   right: 20px;
+   top: 35px;
+   z-index: -1;
+   width: 15%;
+   left: 14px;
+   overflow: hidden;
+   -moz-transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+   -ms-transition: all 0.5s;
+   transition: all 0.5s;
+}
+
+.profile-info:after {
+   display: block;
+   content: " ";
+   clear: both;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 0;
+   height: 0;
+   border-right: 30px solid #2ab2de;
+   border-top: 30px solid #f4f4f4;
+   content: "";
+}
+
+#sideBar::after{
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 0;
+   height: 0;
+   border-right: 30px solid #2ab2de;
+   border-top: 30px solid #f4f4f4;
+   content: "";
+}
