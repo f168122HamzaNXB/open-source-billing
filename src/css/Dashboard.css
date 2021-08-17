@@ -34,14 +34,14 @@
    height: 115px;
    padding: 40px 15px 20px;
    background: #05a4d8;
-   padding-top: 200px;
-   color: #05a4d8;
-   position: fixed;
+   margin-top: 5px;
+   /* color: #05a4d8; */
+   position: relative;
    right: 20px;
-   top: 35px;
+   top: 13%;
    z-index: -1;
-   width: 15%;
-   left: 14px;
+   width: 72.5%;
+   left: 25px;
    overflow: hidden;
    -moz-transition: all 0.5s;
    -webkit-transition: all 0.5s;
@@ -63,7 +63,10 @@
    content: "";
 }
 
+
 #sideBar::after{
+   display: flexbox;
+   flex-direction: row;
    position: absolute;
    left: 0;
    top: 0;
@@ -72,4 +75,542 @@
    border-right: 30px solid #2ab2de;
    border-top: 30px solid #f4f4f4;
    content: "";
+}
+
+.userIcon{
+   height: 50px;
+   width: 50px;
+}
+
+.profileImage{
+   float: left;
+   margin: 0 10px 0 0;
+   border-radius: 100%;
+   width: 50px;
+   height: 50px;
+   position: relative;
+   z-index: 9;
+}
+
+.columnStyle{
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: start;
+}
+
+.profileDetails{
+   color: #fff;
+   z-index: 1;
+   transition: all 0.5s;
+   overflow: visible;
+}
+
+.dropDown{
+   position: relative;
+   margin: 2px 0 0;
+   top: -18px;
+}
+
+.dropDownButton{
+   text-decoration: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 400;
+   position: relative;
+   z-index: 2;
+   display: inline-block;
+   width: 100%;
+   bottom: 30px;
+   margin-left: 60px;
+}
+
+.emailLink{
+   position: absolute;
+   top: 40px;
+   left: 60px;
+   font-size: 12px;
+   text-decoration: none;
+   color: #fff;
+   -webkit-tap-highlight-color: transparent;
+   background-color: transparent;
+}
+
+.userDropdown{
+   right: -150px;
+   top: -60px;
+}
+
+.verticalBar{
+   color: #fff;
+   width: 72.5%;
+   margin-left: 25px;
+   background-color: #2ab2de;
+   padding-bottom: 100px;
+}
+
+.iconAlign{
+   float: left;
+   margin-left: 20px;
+}
+
+#sideBarText{
+   font-size: 18px;
+   text-align: center;
+   text-decoration: none;
+   color: #fff;
+}
+
+#sideBarText:hover{
+   background-color: #05a4d8;
+   color: #fff;
+   border-top: 1.5px solid #09b8e2;
+}
+
+.dashboardBody{
+   margin: 5px;
+   margin-left: 58%;
+   background: #fff;
+   width: 170%;
+   padding-top: 0px !important;
+   padding: 30px;
+   position: relative;
+   -webkit-box-shadow: 0 0 9px #e0e0e0;
+}
+
+.statsStyle{
+   line-height: 1.4;
+   font-weight: 400;
+   color: #09b8e2;
+   padding: 14px 0px !important;
+   margin: 0 0 2px;
+   font-size: 20px;
+}
+
+h3{
+   display: block;
+   margin-block-start: 1em;
+   margin-block-end: 1em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+}
+
+.btn{
+   float: right;
+   margin: 0 10px 0 0;
+   border: 1px solid #f0f0f1;
+   border-radius: 20px;
+   height: 22px;
+   line-height: 22px;
+   font-size: 11px;
+   font-weight: 500;
+   box-shadow: none;
+   text-transform: uppercase;
+   margin: 0 -10px;
+}
+
+.btn, .btn-large{
+   text-decoration: none;
+   letter-spacing: .5px;
+   transition: .2s ease-out;
+   cursor: pointer;
+}
+
+.btn, .btn-large, .btn-floating, .btn-large, .btn-flat {
+   outline: 0;
+}
+
+.btn, .btn-large, .btn-flat {
+   display: inline-block;
+   vertical-align: middle;
+   -webkit-tap-highlight-color: transparent;
+}
+
+.dashboardBody h3 #radioBtn .btn{
+   min-width: 132px !important;
+   border: 1px solid #f0f0f1;
+   border-radius: 20px;
+   height: 22px;
+   line-height: 22px;
+   padding: 0 10px;
+   font-size: 11px;
+   font-weight: 500;
+   box-shadow: none;
+   text-transform: uppercase;
+   margin: 0 -10px;
+   z-index: 9;
+   color: #909090;
+   background: #fff;
+}
+
+.dashboardBody h3 #radioBtn .active{
+   background: #09b8e2;
+   color: #fff;
+   z-index: 10;
+   position: relative;
+   text-align: center;
+   padding: 0 10px;
+   border-color: transparent;
+}
+
+.dashboardBody h3 #radioBtn .active:first-child{
+   padding-right: 10px;
+}
+
+.dashboardBody h3{
+   padding: 14px 0px !important;
+   border-bottom: 1px solid #dbdbdb;
+   margin: 0 0 2px;
+}
+
+.dashboardBody h3 #radioBtn {
+   float: right;
+   margin: 0 10px 0 0;
+}
+
+.row{
+   margin-bottom: 0;
+   margin-left: -10px;
+   margin-right: -10px;
+   -bs-gutter-x: 1.5rem;
+   --bs-gutter-y: 0;
+}
+
+.row .col.m6{
+   width: 50%;
+   margin-left: auto;
+   left: auto;
+   right: auto;
+}
+
+.row .col{
+   float: left;
+   box-sizing: border-box;
+   padding: 0 0.75rem;
+   min-height: 1px;
+}
+
+ul{
+   display: block;
+   margin-block-start: 1em;
+   margin-block-end: 1em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   padding-inline-start: 40px;
+}
+
+ul:not(.browser-default) {
+   padding-left: 0;
+   list-style-type: none;
+}
+
+#amount{
+   font-size: 18px;
+   margin: 1.14rem 0 0.912rem 0;
+   font-weight: 400;
+   line-height: 1.4;
+   padding-top: 10%;
+   text-decoration: none;
+   color: #09b8e2;
+   background-color: transparent;
+}
+
+.dashboardBody .amount{
+   font-size: 30px;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   line-height: 30px;
+   padding-bottom: 12px;
+   margin: 0 0 16px;
+   border-bottom: 1px solid #f0f0f1;
+}
+
+.set-positions {
+   position: relative;
+}
+
+.mCSB_container{
+   overflow: hidden;
+   width: auto;
+   height: auto;
+}
+
+.mCustomScrollbar {
+   touch-action: pinch-zoom;
+}
+
+.invoiceList{
+   margin: 5px;
+   /* margin-left: 80px; */
+   background: #fff;
+   width: 200%;
+   padding-top: 0px !important;
+   padding: 30px;
+   position: relative;
+   -webkit-box-shadow: 0 0 9px #e0e0e0;
+}
+
+.mCustomScrollBox{
+   position: relative;
+   overflow: hidden;
+   height: 100%;
+   max-width: 100%;
+   outline: none;
+   direction: ltr;
+}
+
+.invoiceList h3{
+   padding: 14px, 20px;
+   border-bottom: 1px solid #dbdbdb;
+   margin: 0 0 2px;
+}
+
+.invoiceList h3 #secondRadio{
+   float: right;
+   margin: 0 2 0 0;
+}
+
+.invoiceList h3 #secondRadio .active:first-child{
+   padding-right: 4px;
+}
+
+.invoiceList h3 #secondRadio .nonActive:first-child{
+   padding-right: 4px;
+}
+
+.invoiceList h3 #secondRadio .active{
+   background: #09b8e2;
+   color: #fff;
+   z-index: 10;
+   position: relative;
+   text-align: center;
+   padding: 0 5px;
+   border-color: transparent;
+   border-radius: 18px;
+   font-weight: 500;
+   font-size: 11px;
+   height: 20px;
+}
+
+.invoiceList h3 #secondRadio .nonActive{
+   border: 1px solid #f0f0f1;
+   border-radius: 18px;
+   height: 22px;
+   line-height: 20px;
+   padding: 0 5px;
+   font-size: 11px;
+   font-weight: 500;
+   box-shadow: none;
+   text-transform: uppercase;
+   margin: 0 -5px;
+   color: #909090;
+   min-width: 60px;
+   z-index: 9;
+   background: #fff;
+}
+
+#activitySideBar.sideShow{
+   margin-right: 0;
+   transition: all 0.5s;
+}
+
+#activitySideBar{
+   height: calc(100% - 90px);
+   position: fixed;
+   right: 30px;
+   z-index: 9;
+   width: 300px;
+}
+
+#recentActivity{
+   line-height: 1.4;
+   font-weight: 400;
+   color: #09b8e2;
+   font-size: 20px;
+}
+
+.activityScrollHolder{
+   max-height: calc(100% - 95px);
+   height: 100%;
+}
+
+.mCustomScrollbar{
+   outline: none;
+   direction: ltr;
+}
+
+#activitySideBar .mCustomScrollBox{
+   padding-right: 10px;
+}
+
+.activityDate:first-child{
+   text-indent: 57px;
+}
+
+.activityDate{
+   display: block;
+   color: #454545;
+   margin: 10px 0;
+   text-transform: uppercase;
+   font-size: 12px;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#activitySidebar .activitiesList{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   position: relative;
+}
+
+.activitiesList::after{
+   width: 1px;
+   height: 61%;
+   left: 80px;
+   content: " ";
+   background: #dbdbdb;
+   position: absolute;
+   top: 25px;
+   bottom: 0;
+}
+
+ul{
+   display: block;
+   margin-block-start: 1em;
+   margin-block-end: 1em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   padding-inline-start: 40px;
+}
+
+.invoiceActivity{
+   width: 77px;
+   text-align: center;
+   background: #09b8e2;
+   height: 23px;
+   border-radius: 22px 0 0 20px;
+   font-size: 11px;
+   padding: 0 10px 0 6px;
+   line-height: 23px;
+   color: #fff;
+   text-transform: uppercase;
+   position: relative;
+   float: left;
+   margin: 11px 20px 0 0;
+}
+
+.activityDetails{
+   overflow: hidden;
+   color: #454545;;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   padding-top: 5px;
+}
+
+.activityDetails em{
+   font-size: 11px;
+   font-style: normal;
+   display: block;
+   margin-top: -20px;
+   margin-left: 1px;
+}
+
+.invoiceActivity::before{
+   width: 0;
+   height: 0;
+   border-top: 11px solid #f4f4f4;
+   border-left: 10px solid #09b8e2;
+   border-bottom: 12px solid #f4f4f4;
+   content: " ";
+   position: absolute;
+   right: 0;
+}
+
+.invoiceActivity::after{
+   width: 8px;
+   height: 8px;
+   background: #09b8e2;
+   border-radius: 10px;
+   content: " ";
+   right: -8px;
+   position: absolute;
+   top: 6px;
+   z-index: 99;
+}
+
+.paymentActivity{
+   width: 77px;
+   text-align: center;
+   background: #8ec951;
+   height: 23px;
+   border-radius: 22px 0 0 20px;
+   font-size: 11px;
+   padding: 0 10px 0 6px;
+   line-height: 23px;
+   color: #fff;
+   text-transform: uppercase;
+   position: relative;
+   float: left;
+   margin: 11px 20px 0 0;
+}
+
+.paymentActivity::after{
+   width: 8px;
+   height: 8px;
+   background: #8ec951;
+   border-radius: 10px;
+   content: " ";
+   right: -8px;
+   position: absolute;
+   top: 6px;
+   z-index: 99;
+}
+
+.paymentActivity::before{
+   width: 0;
+   height: 0;
+   border-top: 11px solid #f4f4f4;
+   border-left: 10px solid #8ec951;
+   border-bottom: 12px solid #f4f4f4;
+   content: " ";
+   position: absolute;
+   right: 0;
+}
+
+.recentBorder{
+   padding: 14px 0;
+   border-bottom: 1px solid #dbdbdb;
+   margin: 0 0 4px;
+}
+
+.secondActivityDate{
+   display: block;
+   color: #454545;
+   background-color: #fff;
+   margin: 10px 57px;
+   text-transform: uppercase;
+   font-size: 12px;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.activitiesSecondList::after{
+   width: 1px;
+   height: 100%;
+   left: 80px;
+   content: " ";
+   background: #dbdbdb;
+   position: absolute;
+   top: 0px;
+   bottom: 0;
+}
+
+.activitiesSecondList{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   position: relative;
+}
+
+#chartHeading{
+   font-size: 18px;
+   color: #09b8e2;  
+   line-height: 1.4;
+   font-weight: 400;
 }
